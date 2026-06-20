@@ -1,0 +1,18 @@
+world: world
+bounds:
+  min-x: -1500
+  max-x: 1500
+  min-z: -1500
+  max-z: 1500
+slots: 54
+open-timer: 300
+item-count: 14
+despawn-time: 600
+item-appearance:
+  items-per-tick:
+    min: 1
+    max: 2
+  delay:
+    min: 5
+    max: 10
+

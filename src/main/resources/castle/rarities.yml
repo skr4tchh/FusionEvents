@@ -1,0 +1,25 @@
+common:
+  display-name: '&f&lОбычный'
+  color: WHITE
+  chance: 40.0
+  shulker-hits: 10
+uncommon:
+  display-name: '&a&lНеобычный'
+  color: GREEN
+  chance: 30.0
+  shulker-hits: 30
+rare:
+  display-name: '&9&lРедкий'
+  color: BLUE
+  chance: 18.0
+  shulker-hits: 50
+epic:
+  display-name: '&5&lЭпический'
+  color: PURPLE
+  chance: 9.0
+  shulker-hits: 100
+legendary:
+  display-name: '&6&lЛегендарный'
+  color: GOLD
+  chance: 3.0
+  shulker-hits: 250

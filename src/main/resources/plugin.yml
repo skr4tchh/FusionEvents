@@ -1,0 +1,27 @@
+name: FusionEvents
+version: ${version}
+main: pw.fusionmine.fusionevents.FusionEvents
+api-version: 1.21.11
+author: "Skr4tch (TG: skr4tch)"
+depend: [WorldGuard]
+
+commands:
+  bosses:
+    description: Управление боссами (админ)
+    usage: /bosses <reload|spawn|kill|list>
+    permission: fusionevents.admin
+  myst:
+    description: Управление мистическим сундуком (админ)
+    usage: /myst <reload|spawn|remove|admin>
+    permission: fusionevents.admin
+  event:
+    description: Информация о событиях
+    usage: /event <delay|gps>
+  castle:
+    description: Управление замком
+    permission: fusionevents.admin
+
+permissions:
+  fusionevents.admin:
+    description: Админ доступ к плагину
+    default: op

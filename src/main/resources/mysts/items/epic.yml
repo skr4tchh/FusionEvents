@@ -1,0 +1,25 @@
+item_0:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2586
+  type: ACACIA_PLANKS
+  amount: 64
+item_1:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2586
+  type: DARK_OAK_PLANKS
+  amount: 64
+item_2:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2586
+  type: CRIMSON_PLANKS
+  amount: 64
+item_3:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2586
+  type: WARPED_PLANKS
+  amount: 64
+item_4:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2586
+  type: BEDROCK
+  amount: 64

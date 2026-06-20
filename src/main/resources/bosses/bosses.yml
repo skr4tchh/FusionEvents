@@ -1,0 +1,34 @@
+ILLUSIONER:
+  type: ILLUSIONER
+  display-name: '&#A27DF8&lИ&#8A86F9&lЛ&#728EFB&lЛ&#5997FC&lЮ&#419FFE&lЗ&#29A8FF&lИ&#29A8FF&lО&#29A8FF&lН&#29A8FF&lИ&#29A8FF&lС&#29A8FF&lТ'
+  hp: 1024.0
+  damage: 25.0
+  aura-radius: 10.0
+  effect-aura:
+  - SLOW:1:10
+  - BLINDNESS:1:10
+  - WITHER:1:5
+knight:
+  type: WITHER_SKELETON
+  display-name: '&#808080&lР&#797979&lЫ&#727272&lЦ&#6A6A6A&lА&#636363&lР&#5C5C5C&lЬ'
+  hp: 750.0
+  damage: 5.0
+  aura-radius: 10.0
+  effect-aura:
+  - WITHER:1:5
+spider:
+  type: SPIDER
+  display-name: '&#FB9C08&lП&#FCA406&lА&#FDAC05&lУ&#FDB403&lЧ&#FEBC02&lО&#FFC400&lК'
+  hp: 350.0
+  damage: 5.0
+  aura-radius: 10.0
+  effect-aura:
+  - WITHER:1:5
+ohotnik:
+  type: SKELETON
+  display-name: '&#C26B46&lО&#BB6743&lХ&#B46341&lО&#AD5F3E&lТ&#A55B3B&lН&#9E5739&lИ&#975336&lК'
+  hp: 1024.0
+  damage: 10.0
+  aura-radius: 10.0
+  effect-aura:
+  - WITHER:1:5

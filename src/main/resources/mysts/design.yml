@@ -1,0 +1,48 @@
+prefix: '&#BE44FC&lМ&#B348FA&lИ&#A74CF8&lС&#9C50F6&lТ&#9054F4&lИ&#8557F1&lЧ&#795BEF&lЕ&#6E5FED&lС&#6263EB&lК&#5767E9&lИ&#5767E9&lЙ
+  &#5767E9&lС&#5767E9&lУ&#5767E9&lН&#5767E9&lД&#5767E9&lУ&#5767E9&lК &8›&r '
+inventory-title: '&#BE44FC&l✦ &#9C50F6&lМИСТИЧЕСКИЙ СУНДУК &#BE44FC&l✦'
+hologram:
+  waiting:
+  - '&#BE44FC&l✦ &#9C50F6&lМИСТИЧЕСКИЙ СУНДУК &#BE44FC&l✦'
+  - '&7Нажмите &fПКМ &7чтобы активировать'
+  - '&#5767E9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+  opening:
+  - '&#BE44FC&l✦ &#9C50F6&lМИСТИЧЕСКИЙ СУНДУК &#BE44FC&l✦'
+  - '&7Открытие через: &#BE44FC{time} &7секунд'
+  - '&#5767E9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+  opened:
+  - '&#BE44FC&l✦ &#9C50F6&lСУНДУК ОТКРЫТ &#BE44FC&l✦'
+  - '&7Забирайте добычу!'
+  - '&#5767E9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+  height: 2.5
+  line-spacing: 0.3
+messages:
+  spawn:
+  - '[message] &f'
+  - '[message]&f      {prefix}'
+  - '[message] &f'
+  - '[message]&f   Мистический сундук появился в мире!'
+  - '[message]&f   Координаты: &#9C50F6X: {x} Y: {y} Z: {z}'
+  - '[message]&f   Используйте &#BE44FC/event gps &fдля навигации'
+  - '[message] &f'
+  opened: []
+  despawn:
+  - '[message] {prefix}&cСундук исчез, так как его никто не открыл!'
+  no-permission: '{prefix}&cУ вас нет прав для выполнения этой команды!'
+  config-reloaded: '{prefix}&aКонфигурация перезагружена!'
+  chest-spawning: '{prefix}&aСундук спавнится...'
+  chest-already-exists: '{prefix}&cСундук уже существует!'
+  no-chest-active: '{prefix}&cНет активного сундука!'
+  chest-removed: '{prefix}&aСундук удалён!'
+  chest-already-opening: '{prefix}&cСундук уже открывается!'
+  cannot-break-chest: '{prefix}&cВы не можете сломать этот сундук!'
+  rarity-not-found: '{prefix}&cРедкость &4{rarity} &cне найдена!'
+commands:
+  usage:
+  - '{prefix}&#BE44FC&lИспользование команд:'
+  - ''
+  - '  &#9C50F6/myst reload &7- Перезагрузить конфигурацию'
+  - '  &#9C50F6/myst spawn &7- Создать сундук'
+  - '  &#9C50F6/myst remove &7- Удалить сундук'
+  - '  &#9C50F6/myst admin inventory <редкость> &7- Редактор предметов'
+  - ''

@@ -1,0 +1,51 @@
+spawn:
+  world: world
+  x: 131.0
+  y: 117.0
+  z: -285.0
+shulker-spots:
+- spot1:114,122,-279
+- spot2:114,122,-291
+- spot3:148,122,-279
+- spot4:148,122,-291
+- spot5:131,130,-266
+- spot6:125,141,-280
+- spot7:137,141,-280
+- spot8:136,141,-290
+- spot9:126,141,-290
+- spot10:119,142,-297
+- spot11:143,142,-297
+- spot12:143,142,-273
+- spot13:119,142,-273
+- spot14:131,162,-285
+duration: 600
+prefix: '&#FF6B6B&lЗ&#FF5A5A&lА&#FF4949&lМ&#FF3838&lО&#FF2727&lК &8›&r '
+messages:
+  spawn:
+  - '[message] &f'
+  - '[message]&f      {prefix}'
+  - '[message] &f'
+  - '[message]&f   &#FF6B6B✦ &fЗамок появился в мире!'
+  - '[message]&f   &fОн находится на: &#FF4949/warp castle'
+  - '[message]&f   У вас есть &#FF6B6B10 минут &fна зачистку!'
+  - '[message] &f'
+  despawn:
+  - '[message] {prefix}&cЗамок исчез, время вышло!'
+  no-permission: '{prefix}&cУ вас нет прав для выполнения этой команды!'
+  config-reloaded: '{prefix}&aКонфигурация перезагружена!'
+  castle-spawning: '{prefix}&aЗамок спавнится...'
+  castle-already-exists: '{prefix}&cЗамок уже активен!'
+  no-castle-active: '{prefix}&cНет активного замка!'
+  castle-removed: '{prefix}&aЗамок удалён!'
+  rarity-not-found: '{prefix}&cРедкость &4{rarity} &cне найдена!'
+  shulker-broken: '{prefix}&aШалкер сломан! Осталось ударов: {hits}'
+  shulker-opened: '{prefix}&6Шалкер открыт! Забирайте добычу!'
+commands:
+  usage:
+  - '{prefix}&#FF6B6B&lИспользование команд:'
+  - ''
+  - '  &#FF4949/castle reload &7- Перезагрузить конфигурацию'
+  - '  &#FF4949/castle spawn &7- Создать замок'
+  - '  &#FF4949/castle remove &7- Удалить замок'
+  - '  &#FF4949/castle admin inventory <редкость> &7- Редактор предметов'
+  - ''

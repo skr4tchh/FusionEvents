@@ -1,0 +1,161 @@
+item_0:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:ghast_tear
+  count: 4
+  schema_version: 1
+item_1:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:tipped_arrow
+  count: 32
+  components:
+    minecraft:potion_contents: '{potion:"minecraft:harming"}'
+  schema_version: 1
+item_2:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:chorus_fruit
+  count: 32
+  schema_version: 1
+item_3:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:golden_apple
+  count: 6
+  schema_version: 1
+item_4:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:ender_pearl
+  count: 8
+  schema_version: 1
+item_5:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:redstone_block
+  count: 24
+  schema_version: 1
+item_6:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:experience_bottle
+  count: 64
+  schema_version: 1
+item_7:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:golden_carrot
+  count: 24
+  schema_version: 1
+item_8:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:gunpowder
+  count: 16
+  schema_version: 1
+item_9:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:slime_block
+  count: 16
+  schema_version: 1
+item_10:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:nether_wart
+  count: 16
+  schema_version: 1
+item_11:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:splash_potion
+  count: 1
+  components:
+    minecraft:potion_contents: '{custom_color:754944,custom_effects:[{duration:400,id:"minecraft:slowness",show_icon:1b},{duration:6000,id:"minecraft:poison",show_icon:1b}]}'
+    minecraft:custom_name: '"§2§lБоль"'
+  schema_version: 1
+item_12:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:honey_bottle
+  count: 2
+  schema_version: 1
+item_13:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:coal_block
+  count: 32
+  schema_version: 1
+item_14:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:nether_star
+  count: 1
+  schema_version: 1
+item_15:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:ender_chest
+  count: 1
+  schema_version: 1
+item_16:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:bow
+  count: 1
+  components:
+    minecraft:enchantments: '{"minecraft:power":3,"minecraft:unbreaking":3}'
+  schema_version: 1
+item_17:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:experience_bottle
+  count: 24
+  schema_version: 1
+item_18:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:diamond_block
+  count: 1
+  schema_version: 1
+item_19:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:emerald_ore
+  count: 1
+  schema_version: 1
+item_20:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:gold_block
+  count: 2
+  schema_version: 1
+item_21:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:diamond_block
+  count: 2
+  schema_version: 1
+item_22:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:tipped_arrow
+  count: 24
+  components:
+    minecraft:potion_contents: '{custom_color:16122074,custom_effects:[{amplifier:2b,duration:480,id:"minecraft:slowness",show_icon:0b,show_particles:0b},{duration:960,id:"minecraft:nausea",show_icon:0b,show_particles:0b},{duration:320,id:"minecraft:blindness",show_icon:0b,show_particles:0b},{amplifier:2b,duration:480,id:"minecraft:weakness",show_icon:0b,show_particles:0b}],potion:"minecraft:water"}'
+    minecraft:custom_name: '{extra:[{bold:0b,color:"white",italic:0b,obfuscated:0b,strikethrough:0b,text:"Стрела
+      ",underlined:0b},{bold:1b,color:"light_purple",italic:0b,text:"Гаргоны"}],text:""}'
+    minecraft:custom_data: '{PublicBukkitValues:{"executableitems:ei-id":"s2","score:usage":-1}}'
+  schema_version: 1
+item_23:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:tipped_arrow
+  count: 24
+  components:
+    minecraft:potion_contents: '{custom_color:63204,custom_effects:[{amplifier:4b,duration:800,id:"minecraft:slowness",show_icon:0b,show_particles:0b},{duration:960,id:"minecraft:weakness",show_icon:0b,show_particles:0b}],potion:"minecraft:water"}'
+    minecraft:custom_name: '{extra:[{bold:0b,color:"white",italic:0b,obfuscated:0b,strikethrough:0b,text:"Стрела
+      ",underlined:0b},{bold:1b,color:"aqua",italic:0b,text:"Льда"}],text:""}'
+    minecraft:custom_data: '{PublicBukkitValues:{"executableitems:ei-id":"s4","score:usage":-1}}'
+  schema_version: 1

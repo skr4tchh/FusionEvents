@@ -1,0 +1,11 @@
+enabled: true
+title: '&x&F&B&9&C&0&8&l⚔ {name} &8| &c❤ {health}&7/&c{max-health} &8| &e{percent}%'
+color: RED
+style: SEGMENTED_10
+update-interval: 5
+color-stages:
+  high: GREEN
+  high-threshold: 70
+  medium: YELLOW
+  medium-threshold: 40
+  low: RED

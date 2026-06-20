@@ -1,0 +1,154 @@
+item_0:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:enchanted_book
+  count: 1
+  components:
+    minecraft:stored_enchantments: '{"minecraft:efficiency":3}'
+  schema_version: 1
+item_1:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:enchanted_book
+  count: 1
+  components:
+    minecraft:stored_enchantments: '{"minecraft:thorns":3}'
+  schema_version: 1
+item_2:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:blaze_rod
+  count: 16
+  schema_version: 1
+item_3:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:slime_ball
+  count: 16
+  schema_version: 1
+item_4:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:obsidian
+  count: 16
+  schema_version: 1
+item_5:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:cake
+  count: 1
+  schema_version: 1
+item_6:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:experience_bottle
+  count: 24
+  schema_version: 1
+item_7:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:hay_block
+  count: 24
+  schema_version: 1
+item_8:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:spectral_arrow
+  count: 32
+  schema_version: 1
+item_9:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:cake
+  count: 1
+  schema_version: 1
+item_10:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:white_stained_glass
+  count: 32
+  schema_version: 1
+item_11:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:iron_block
+  count: 16
+  schema_version: 1
+item_12:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:spruce_log
+  count: 48
+  schema_version: 1
+item_13:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:golden_apple
+  count: 2
+  schema_version: 1
+item_14:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:carrot
+  count: 24
+  schema_version: 1
+item_15:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:emerald
+  count: 24
+  schema_version: 1
+item_16:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:wither_skeleton_skull
+  count: 1
+  schema_version: 1
+item_17:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:name_tag
+  count: 4
+  schema_version: 1
+item_18:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:tipped_arrow
+  count: 24
+  components:
+    minecraft:potion_contents: '{custom_color:9079434,custom_effects:[{duration:320,id:"minecraft:blindness",show_icon:1b},{amplifier:2b,duration:800,id:"minecraft:weakness",show_icon:1b}]}'
+    minecraft:custom_name: '"§fСтрела §7§lВетра"'
+  schema_version: 1
+item_19:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:flint_and_steel
+  count: 1
+  components:
+    minecraft:repair_cost: '1'
+    minecraft:enchantments: '{"minecraft:unbreaking":3}'
+  schema_version: 1
+item_20:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:phantom_membrane
+  count: 16
+  schema_version: 1
+item_21:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:diamond_block
+  count: 2
+  schema_version: 1
+item_22:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:diamond_block
+  count: 1
+  schema_version: 1
+item_23:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:gold_block
+  count: 1
+  schema_version: 1

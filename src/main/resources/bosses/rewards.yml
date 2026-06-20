@@ -1,0 +1,43 @@
+ILLUSIONER:
+  top-1:
+    commands:
+      - 'p give {user} 50'
+  top-2:
+    commands:
+      - 'p give {user} 30'
+  top-3:
+    commands:
+      - 'p give {user} 15'
+      
+knight:
+  top-1:
+    commands:
+      - 'p give {user} 25'
+  top-2:
+    commands:
+      - 'p give {user} 10'
+  top-3:
+    commands:
+      - 'p give {user} 5'
+
+spider:
+  top-1:
+    commands:
+      - 'p give {user} 25'
+  top-2:
+    commands:
+      - 'p give {user} 10'
+  top-3:
+    commands:
+      - 'p give {user} 5'
+
+ohotnik:
+  top-1:
+    commands:
+      - 'p give {user} 40'
+  top-2:
+    commands:
+      - 'p give {user} 25'
+  top-3:
+    commands:
+      - 'p give {user} 10'

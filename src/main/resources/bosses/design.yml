@@ -1,0 +1,57 @@
+prefix: '&x&F&B&9&C&0&8&lБ&x&F&C&A&6&0&6&lО&x&F&D&B&0&0&4&lС&x&F&E&B&A&0&2&lС&x&F&F&C&4&0&0&lЫ
+  &8›&r '
+colors:
+  primary: '&6'
+  secondary: '&e'
+  error: '&c'
+  success: '&a'
+messages:
+  spawn:
+  - '&f'
+  - '     {prefix}'
+  - '&f'
+  - '  &fПоявился босс {name} &fЗдоровье: §x§F§5§0§0§0§A{max-health} ❤'
+  - '  &fСкорее победи, и получи награду'
+  - '  &fПо слухам он на арене: &x&F&B&9&C&0&8/warp pvp'
+  - '&f'
+  death:
+  - '&f'
+  - '     {prefix}'
+  - '&f'
+  - '  &fБосс {name} &fбыл убит'
+  top-announcement:
+  - '&f'
+  - '  &#F8D27D&lТ&#F8D078&lо&#F9CE73&lп &#FACB68&lи&#FAC963&lг&#FBC75E&lр&#FBC558&lо&#FCC353&lк&#FCC14E&lо&#FCBF49&lв
+    &#FDBC3E&lп&#FEBA39&lо &#FFB62E&lн&#FFB429&lа&#FFB429&lн&#FFB429&lе&#FFB429&lс&#FFB429&lё&#FFB429&lн&#FFB429&lн&#FFB429&lо&#FFB429&lм&#FFB429&lу
+    &#FFB429&lу&#FFB429&lр&#FFB429&lо&#FFB429&lн&#FFB429&lу&#FFB429&l:'
+  - '&f'
+  delay:
+  - '&f'
+  - '     &6&l⏰ ВРЕМЯ ДО БОССА ⏰'
+  - '&f'
+  - '  &fСтатус босса: §x§F§5§0§0§0§A{boss-status}'
+  - '  &fБосс активен: §x§F§5§0§0§0§A{has-active-boss}'
+  - '&f'
+  - '  &fДо следующего спавна: &e{time-left}'
+  - '&f'
+  - '  &fБосс появится на арене: &e/warp pvp'
+  - '&f'
+  top-line: '  &#FFB429{place}. &#FFB429{player} &7- &c{damage} урона'
+  no-boss-active: '{prefix}&cНет активного босса!'
+  boss-spawned: '{prefix}&aБосс {name} &aуспешно создан!'
+  boss-not-found: '{prefix}&cБосс с ID &4{id} &cне найден!'
+  config-reloaded: '{prefix}&aКонфигурация перезагружена!'
+  boss-killed: '{prefix}&aАктивный босс убит!'
+  boss-already-exists: '{prefix}&cБосс уже активен!'
+  boss-despawned: '{prefix}&fБосс {name} &fисчез, так как его никто не победил!'
+  no-permission: '{prefix}&cУ вас нет прав для выполнения этой команды!'
+commands:
+  usage:
+  - '{prefix}&6&lИспользование команд:'
+  - ''
+  - '  &e/bosses reload &7- Перезагрузить конфигурацию'
+  - '  &e/bosses spawn <id> &7- Создать босса'
+  - '  &e/bosses kill &7- Убить активного босса'
+  - '  &e/bosses list &7- Список всех боссов'
+  - '  &e/bosses delay &7- Время до следующего босса'
+  - ''

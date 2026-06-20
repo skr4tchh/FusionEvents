@@ -1,0 +1,7 @@
+spawn-location:
+  world: "spawn"
+  x: 6.0
+  y: 50.0
+  z: 215.0
+
+despawn-time: 300

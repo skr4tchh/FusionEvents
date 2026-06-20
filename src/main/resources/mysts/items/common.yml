@@ -1,0 +1,86 @@
+item_0:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:golden_apple
+  count: 2
+  schema_version: 1
+item_1:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:potion
+  count: 1
+  components:
+    minecraft:potion_contents: '{potion:"minecraft:fire_resistance"}'
+  schema_version: 1
+item_2:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:spectral_arrow
+  count: 16
+  schema_version: 1
+item_3:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:blaze_powder
+  count: 16
+  schema_version: 1
+item_4:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:oak_log
+  count: 24
+  schema_version: 1
+item_5:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:ghast_tear
+  count: 1
+  schema_version: 1
+item_6:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:glass_bottle
+  count: 16
+  schema_version: 1
+item_7:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:ender_pearl
+  count: 4
+  schema_version: 1
+item_8:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:emerald_block
+  count: 2
+  schema_version: 1
+item_9:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:fermented_spider_eye
+  count: 5
+  schema_version: 1
+item_10:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:gold_block
+  count: 1
+  schema_version: 1
+item_11:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:iron_block
+  count: 10
+  schema_version: 1
+item_12:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:firework_rocket
+  count: 12
+  schema_version: 1
+item_13:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:diamond_block
+  count: 1
+  schema_version: 1

@@ -1,0 +1,18 @@
+common:
+  display-name: '&e§x§9§9§b§c§2§6Обычный'
+  chance: 50.0
+solid:
+  display-name: '&6§x§e§2§b§c§0§0Солидный'
+  chance: 25.0
+bogat:
+  display-name: '&f§x§f§f§6§a§0§9Богатый'
+  chance: 15.0
+elite:
+  display-name: '&f§x§f§f§0§0§0§0Элитный'
+  chance: 7.0
+mythic:
+  display-name: '&5§x§9§e§0§0§f§fМифический'
+  chance: 5.0
+legendary:
+  display-name: '&b§x§0§f§f§f§f§fЛегендарный'
+  chance: 3.0

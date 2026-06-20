@@ -1,0 +1,301 @@
+item_0:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:end_crystal
+  count: 2
+  schema_version: 1
+item_1:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:end_crystal
+  count: 1
+  schema_version: 1
+item_2:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:shulker_shell
+  count: 4
+  schema_version: 1
+item_3:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:ender_pearl
+  count: 16
+  schema_version: 1
+item_4:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:ender_pearl
+  count: 16
+  schema_version: 1
+item_5:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:experience_bottle
+  count: 64
+  schema_version: 1
+item_6:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:enchanted_golden_apple
+  count: 1
+  schema_version: 1
+item_7:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:totem_of_undying
+  count: 1
+  schema_version: 1
+item_8:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:tipped_arrow
+  count: 24
+  components:
+    minecraft:potion_contents: '{custom_color:16166400,custom_effects:[{duration:-1,id:"minecraft:instant_damage",show_icon:1b},{amplifier:1b,duration:960,id:"minecraft:poison",show_icon:1b}]}'
+    minecraft:custom_name: '"§fСтрела §6§lСилы"'
+  schema_version: 1
+item_9:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:cobweb
+  count: 32
+  schema_version: 1
+item_10:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:experience_bottle
+  count: 64
+  schema_version: 1
+item_11:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:experience_bottle
+  count: 64
+  schema_version: 1
+item_12:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:totem_of_undying
+  count: 1
+  schema_version: 1
+item_13:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:iron_ore
+  count: 32
+  schema_version: 1
+item_14:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:golden_shovel
+  count: 1
+  components:
+    minecraft:repair_cost: '3'
+    minecraft:enchantments: '{"minecraft:efficiency":5,"minecraft:vanishing_curse":1}'
+  schema_version: 1
+item_15:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:totem_of_undying
+  count: 1
+  schema_version: 1
+item_16:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:bow
+  count: 1
+  components:
+    minecraft:repair_cost: '31'
+    minecraft:enchantments: '{"minecraft:flame":1,"minecraft:infinity":1,"minecraft:power":5,"minecraft:punch":2,"minecraft:unbreaking":3}'
+  schema_version: 1
+item_17:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:gold_ore
+  count: 32
+  schema_version: 1
+item_18:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:compass
+  count: 1
+  schema_version: 1
+item_19:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:sugar_cane
+  count: 64
+  schema_version: 1
+item_20:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:cooked_beef
+  count: 32
+  schema_version: 1
+item_21:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:diamond_ore
+  count: 32
+  schema_version: 1
+item_22:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:potion
+  count: 1
+  components:
+    minecraft:potion_contents: '{potion:"minecraft:strong_strength"}'
+  schema_version: 1
+item_23:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:potion
+  count: 1
+  components:
+    minecraft:potion_contents: '{potion:"minecraft:strong_swiftness"}'
+  schema_version: 1
+item_24:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:potion
+  count: 1
+  components:
+    minecraft:potion_contents: '{potion:"minecraft:long_fire_resistance"}'
+  schema_version: 1
+item_25:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:enchanted_book
+  count: 1
+  components:
+    minecraft:stored_enchantments: '{"minecraft:mending":1}'
+  schema_version: 1
+item_26:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:elytra
+  count: 1
+  schema_version: 1
+item_27:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:firework_rocket
+  count: 32
+  schema_version: 1
+item_28:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:golden_apple
+  count: 8
+  schema_version: 1
+item_29:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:obsidian
+  count: 24
+  schema_version: 1
+item_30:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:wither_skeleton_spawn_egg
+  count: 1
+  schema_version: 1
+item_31:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:enchanted_book
+  count: 1
+  components:
+    minecraft:stored_enchantments: '{"minecraft:smite":5}'
+  schema_version: 1
+item_32:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:coal_ore
+  count: 32
+  schema_version: 1
+item_33:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:totem_of_undying
+  count: 1
+  components:
+    minecraft:attribute_modifiers: '[{amount:2.0d,id:"minecraft:f710054d-174b-41c2-b509-bb224add1466",operation:"add_value",slot:"offhand",type:"minecraft:attack_damage"},{amount:-4.0d,id:"minecraft:b89254be-fe9a-4387-9499-4e29de8cd6c8",operation:"add_value",slot:"offhand",type:"minecraft:max_health"}]'
+    minecraft:lore: '["",{extra:[{bold:0b,color:"gray",italic:0b,obfuscated:0b,strikethrough:0b,text:"Когда
+      во второй руке:",underlined:0b}],text:""},{extra:[{bold:0b,color:"blue",italic:0b,obfuscated:0b,strikethrough:0b,text:"+2
+      Урон",underlined:0b}],text:""},{extra:[{bold:0b,color:"red",italic:0b,obfuscated:0b,strikethrough:0b,text:"-4
+      Максимальное здоровье",underlined:0b}],text:""}]'
+    minecraft:tooltip_display: '{hidden_components:["minecraft:enchantments","minecraft:attribute_modifiers","minecraft:unbreakable","minecraft:can_break","minecraft:can_place_on","minecraft:pot_decorations","minecraft:container_loot","minecraft:block_state","minecraft:container","minecraft:bundle_contents","minecraft:firework_explosion","minecraft:tropical_fish/pattern","minecraft:fireworks","minecraft:jukebox_playable","minecraft:potion_contents","minecraft:written_book_content","minecraft:painting/variant","minecraft:banner_patterns","minecraft:instrument","minecraft:charged_projectiles","minecraft:block_entity_data","minecraft:bees","minecraft:map_id","minecraft:dyed_color","minecraft:stored_enchantments"]}'
+    minecraft:enchantments: '{"minecraft:lure":1}'
+    minecraft:custom_name: '{extra:[{bold:0b,color:"yellow",italic:0b,obfuscated:0b,strikethrough:0b,text:"Тотем
+      силы",underlined:0b}],text:""}'
+  schema_version: 1
+item_34:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:tipped_arrow
+  count: 24
+  components:
+    minecraft:potion_contents: '{custom_color:9079434,custom_effects:[{duration:320,id:"minecraft:blindness",show_icon:0b,show_particles:0b},{amplifier:2b,duration:800,id:"minecraft:weakness",show_icon:0b,show_particles:0b}],potion:"minecraft:water"}'
+    minecraft:custom_name: '{extra:[{bold:0b,color:"white",italic:0b,obfuscated:0b,strikethrough:0b,text:"Стрела
+      ",underlined:0b},{bold:1b,color:"gray",italic:0b,text:"Ветра"}],text:""}'
+    minecraft:custom_data: '{PublicBukkitValues:{"executableitems:ei-id":"s5","score:usage":-1}}'
+  schema_version: 1
+item_35:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:tnt
+  count: 1
+  components:
+    minecraft:lore: '["",{extra:[" ",{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"О",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"с",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"о",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"б",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"е",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"н",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"н",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"о",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"с",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"т",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"и",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:":",underlined:0b}],text:""},{extra:["
+      ",{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"С",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"и",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"л",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"а",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"
+      ",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"в",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"з",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"р",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"ы",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"в",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"а
+      ",underlined:0b},{bold:0b,color:"#FF0000",italic:0b,obfuscated:0b,strikethrough:0b,text:"x",underlined:0b},{bold:0b,color:"#8B0000",italic:0b,obfuscated:0b,strikethrough:0b,text:"3",underlined:0b}],text:""},""]'
+    minecraft:custom_name: '{extra:[{bold:0b,color:"#FF0000",italic:0b,obfuscated:0b,strikethrough:0b,text:"М",underlined:0b},{bold:0b,color:"#F40000",italic:0b,obfuscated:0b,strikethrough:0b,text:"о",underlined:0b},{bold:0b,color:"#E90000",italic:0b,obfuscated:0b,strikethrough:0b,text:"щ",underlined:0b},{bold:0b,color:"#DF0000",italic:0b,obfuscated:0b,strikethrough:0b,text:"н",underlined:0b},{bold:0b,color:"#D40000",italic:0b,obfuscated:0b,strikethrough:0b,text:"а",underlined:0b},{bold:0b,color:"#CA0000",italic:0b,obfuscated:0b,strikethrough:0b,text:"я",underlined:0b},{bold:0b,color:"#BF0000",italic:0b,obfuscated:0b,strikethrough:0b,text:"
+      ",underlined:0b},{bold:0b,color:"#B50000",italic:0b,obfuscated:0b,strikethrough:0b,text:"б",underlined:0b},{bold:0b,color:"#AA0000",italic:0b,obfuscated:0b,strikethrough:0b,text:"о",underlined:0b},{bold:0b,color:"#A00000",italic:0b,obfuscated:0b,strikethrough:0b,text:"м",underlined:0b},{bold:0b,color:"#950000",italic:0b,obfuscated:0b,strikethrough:0b,text:"б",underlined:0b},{bold:0b,color:"#8B0000",italic:0b,obfuscated:0b,strikethrough:0b,text:"а",underlined:0b}],text:""}'
+    minecraft:custom_data: '{PublicBukkitValues:{"fusionblocks:mega":"mega"}}'
+  schema_version: 1
+item_36:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:fishing_rod
+  count: 1
+  components:
+    minecraft:custom_name: '{extra:[{bold:0b,color:"yellow",italic:0b,obfuscated:0b,strikethrough:0b,text:"Рыбацкое
+      проклятие",underlined:0b}],text:""}'
+    minecraft:enchantments: '{"minecraft:luck_of_the_sea":4,"minecraft:lure":4,"minecraft:mending":1,"minecraft:unbreaking":3,"minecraft:vanishing_curse":1}'
+    minecraft:custom_data: '{PublicBukkitValues:{"executableitems:ei-id":"rod","score:usage":-1}}'
+  schema_version: 1
+item_37:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:emerald_ore
+  count: 1
+  schema_version: 1
+item_38:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:diamond_block
+  count: 2
+  schema_version: 1
+item_39:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:emerald_ore
+  count: 1
+  schema_version: 1
+item_40:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4671
+  id: minecraft:tnt
+  count: 1
+  components:
+    minecraft:lore: '["",{extra:[" ",{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"О",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"с",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"о",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"б",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"е",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"н",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"н",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"о",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"с",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"т",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"и",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:":",underlined:0b}],text:""},{extra:["
+      ",{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"С",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"и",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"л",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"а",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"
+      ",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"в",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"з",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"р",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"ы",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"в",underlined:0b},{bold:0b,color:"#FFFFFF",italic:0b,obfuscated:0b,strikethrough:0b,text:"а
+      ",underlined:0b},{bold:0b,color:"#FFA500",italic:0b,obfuscated:0b,strikethrough:0b,text:"x",underlined:0b},{bold:0b,color:"#FF4500",italic:0b,obfuscated:0b,strikethrough:0b,text:"2",underlined:0b}],text:""},""]'
+    minecraft:custom_name: '{extra:[{bold:0b,color:"#FFA500",italic:0b,obfuscated:0b,strikethrough:0b,text:"С",underlined:0b},{bold:0b,color:"#FF9D00",italic:0b,obfuscated:0b,strikethrough:0b,text:"р",underlined:0b},{bold:0b,color:"#FF9500",italic:0b,obfuscated:0b,strikethrough:0b,text:"е",underlined:0b},{bold:0b,color:"#FF8D00",italic:0b,obfuscated:0b,strikethrough:0b,text:"д",underlined:0b},{bold:0b,color:"#FF8500",italic:0b,obfuscated:0b,strikethrough:0b,text:"н",underlined:0b},{bold:0b,color:"#FF7D00",italic:0b,obfuscated:0b,strikethrough:0b,text:"я",underlined:0b},{bold:0b,color:"#FF7500",italic:0b,obfuscated:0b,strikethrough:0b,text:"я",underlined:0b},{bold:0b,color:"#FF6D00",italic:0b,obfuscated:0b,strikethrough:0b,text:"
+      ",underlined:0b},{bold:0b,color:"#FF6500",italic:0b,obfuscated:0b,strikethrough:0b,text:"б",underlined:0b},{bold:0b,color:"#FF5D00",italic:0b,obfuscated:0b,strikethrough:0b,text:"о",underlined:0b},{bold:0b,color:"#FF5500",italic:0b,obfuscated:0b,strikethrough:0b,text:"м",underlined:0b},{bold:0b,color:"#FF4D00",italic:0b,obfuscated:0b,strikethrough:0b,text:"б",underlined:0b},{bold:0b,color:"#FF4500",italic:0b,obfuscated:0b,strikethrough:0b,text:"а",underlined:0b}],text:""}'
+    minecraft:custom_data: '{PublicBukkitValues:{"fusionblocks:medium":"medium"}}'
+  schema_version: 1

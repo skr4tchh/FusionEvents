@@ -1,0 +1,59 @@
+prefix: '&#FFD700&lС&#FFC800&lО&#FFB900&lБ&#FFAA00&lЫ&#FF9B00&lТ&#FF8C00&lИ&#FF7D00&lЯ
+  &8›&r '
+auto-spawn:
+  enabled: true
+  interval: 3600
+min-online-to-spawn: 5
+events:
+  bosses:
+    enabled: false
+  myst:
+    enabled: true
+  castle:
+    enabled: true
+messages:
+  delay-waiting:
+  - '&f'
+  - '     &#FFD700&l⏰ СОБЫТИЯ ⏰'
+  - '&f'
+  - '  &fСейчас нет активных событий'
+  - '&f'
+  - '  &fДо следующего события: &#FFD700{time-left}'
+  - '&f'
+  delay-myst-active:
+  - '&f'
+  - '     &#BE44FC&l✦ МИСТИЧЕСКИЙ СУНДУК ✦'
+  - '&f'
+  - '  &fСундук активен!'
+  - '  &fКоординаты: &#9C50F6X: {x} Y: {y} Z: {z}'
+  - '  &fВремя до исчезновения: &#BE44FC{despawn-time}'
+  - '&f'
+  - '  &fИспользуйте &#BE44FC/event gps &fдля навигации'
+  - '&f'
+  delay-boss-active:
+  - '&f'
+  - '     &#FF6B6B&l⚔ БОСС ⚔'
+  - '&f'
+  - '  &fБосс: {name}'
+  - '  &fВремя до исчезновения: &#FF6B6B{despawn-time}'
+  - '&f'
+  - '  &fОтправляйтесь на арену: &#FF6B6B/warp boss'
+  - '&f'
+  delay-castle-active:
+  - '&f'
+  - '     &x&F&F&6&B&6&B&l✦ &x&F&F&5&A&5&A&lЗ&x&F&F&5&2&5&2&lА&x&F&F&4&9&4&9&lМ&x&F&F&4&1&4&1&lО&x&F&F&3&8&3&8&lК &x&F&F&2&7&2&7&l✦'
+  - '&f'
+  - '  &fВремя до исчезновения: &#FF6B6B{despawn-time}'
+  - '&f'
+  - '  &fОтправляйтесь в замок: &#FF6B6B/warp castle'
+  - '&f'
+  no-myst-active: '{prefix}&cСейчас нет активного мистического сундука!'
+  no-compass: '{prefix}&cУ вас нет компаса в инвентаре!'
+  gps-activated: '{prefix}&aКомпас теперь указывает на сундук!'
+commands:
+  usage:
+  - '{prefix}&#FFD700&lИспользование команд:'
+  - ''
+  - '  &#FFD700/event delay &7- Информация о событиях'
+  - '  &#FFD700/event gps &7- Навигация к сундуку'
+  - ''
