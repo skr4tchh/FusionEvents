@@ -10,6 +10,7 @@ import org.bukkit.Location;
 import org.bukkit.entity.Display;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.UUID;
 
 public class HologramUtils {
@@ -44,6 +45,7 @@ public class HologramUtils {
             var viewers = hologram.getViewers()
                     .stream()
                     .map(Bukkit::getPlayer)
+                    .filter(Objects::nonNull)
                     .toList();
             viewers.forEach(p -> hologram.hideHologram(p));
         }
