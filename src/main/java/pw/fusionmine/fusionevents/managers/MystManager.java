@@ -15,6 +15,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
 import pw.fusionmine.fusionevents.FusionEvents;
 import pw.fusionmine.fusionevents.utils.ColorUtils;
+import pw.fusionmine.fusionevents.utils.HologramUtils;
 import pw.fusionmine.fusionevents.utils.WorldGuardUtils;
 
 import java.io.File;
@@ -29,7 +30,7 @@ public class MystManager implements InventoryHolder {
     private static final String REGION_NAME = "fusionevents_myst_chest";
     private Location chestLocation;
     private Block chestBlock;
-    private List<ArmorStand> holograms;
+    private String hologramName;
     private BukkitTask openTimerTask;
     private BukkitTask despawnTask;
     private BukkitTask gpsTask;
@@ -47,7 +48,6 @@ public class MystManager implements InventoryHolder {
 
     public MystManager(FusionEvents plugin) {
         this.plugin = plugin;
-        this.holograms = new ArrayList<>();
         this.obfuscatedItems = new HashMap<>();
         this.realItems = new HashMap<>();
         this.gpsPlayers = new HashSet<>();
@@ -250,56 +250,27 @@ public class MystManager implements InventoryHolder {
     private void createHologram() {
         if (chestLocation == null) return;
 
-        removeHolograms();
-
         FileConfiguration designConfig = plugin.getConfigManager().getMystDesignConfig();
         List<String> lines = designConfig.getStringList("hologram.waiting");
 
-        double heightStart = designConfig.getDouble("hologram.height", 2.5);
-        double lineSpacing = designConfig.getDouble("hologram.line-spacing", 0.3);
+        int height = designConfig.getInt("hologram.height");
+        Location holoLoc = chestLocation.clone().add(0.5, height, 0.5);
 
-        for (int i = 0; i < lines.size(); i++) {
-            Location holoLoc = chestLocation.clone().add(0.5, heightStart - (i * lineSpacing), 0.5);
-            ArmorStand stand = (ArmorStand) chestLocation.getWorld().spawnEntity(holoLoc, EntityType.ARMOR_STAND);
-            stand.setVisible(false);
-            stand.setGravity(false);
-            stand.setCustomNameVisible(true);
-            stand.setCustomName(ColorUtils.colorize(lines.get(i)));
-            stand.setMarker(true);
-            stand.setInvulnerable(true);
-            holograms.add(stand);
-        }
+        hologramName = HologramUtils.createHologram(holoLoc, lines);
     }
 
     public void updateHologram(List<String> lines) {
-        removeHolograms();
 
         if (chestLocation == null) return;
 
-        FileConfiguration designConfig = plugin.getConfigManager().getMystDesignConfig();
-        double heightStart = designConfig.getDouble("hologram.height", 2.5);
-        double lineSpacing = designConfig.getDouble("hologram.line-spacing", 0.3);
-
-        for (int i = 0; i < lines.size(); i++) {
-            Location holoLoc = chestLocation.clone().add(0.5, heightStart - (i * lineSpacing), 0.5);
-            ArmorStand stand = (ArmorStand) chestLocation.getWorld().spawnEntity(holoLoc, EntityType.ARMOR_STAND);
-            stand.setVisible(false);
-            stand.setGravity(false);
-            stand.setCustomNameVisible(true);
-            stand.setCustomName(ColorUtils.colorize(lines.get(i)));
-            stand.setMarker(true);
-            stand.setInvulnerable(true);
-            holograms.add(stand);
-        }
+        HologramUtils.updateHologramText(hologramName, lines);
     }
 
-    private void removeHolograms() {
-        for (ArmorStand stand : holograms) {
-            if (stand != null && stand.isValid()) {
-                stand.remove();
-            }
+    private void removeHologram() {
+        if(hologramName != null) {
+            HologramUtils.removeHologram(hologramName);
+            hologramName = null;
         }
-        holograms.clear();
     }
 
     public void startOpeningTimer(Player activator) {
@@ -599,7 +570,7 @@ public class MystManager implements InventoryHolder {
             mystInventory = null;
         }
 
-        removeHolograms();
+        removeHologram();
 
         if (chestLocation != null) {
             WorldGuardUtils.removeMystRegion(chestLocation.getWorld(), REGION_NAME);

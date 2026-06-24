@@ -14,8 +14,7 @@ hologram:
   - '&#BE44FC&l✦ &#9C50F6&lСУНДУК ОТКРЫТ &#BE44FC&l✦'
   - '&7Забирайте добычу!'
   - '&#5767E9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
-  height: 2.5
-  line-spacing: 0.3
+  height: 0.9
 messages:
   spawn:
   - '[message] &f'

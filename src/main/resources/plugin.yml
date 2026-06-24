@@ -3,7 +3,7 @@ version: ${version}
 main: pw.fusionmine.fusionevents.FusionEvents
 api-version: 1.21.11
 author: "Skr4tch (TG: skr4tch)"
-depend: [WorldGuard]
+depend: [WorldGuard, FancyHolograms]
 
 commands:
   bosses:

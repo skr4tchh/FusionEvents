@@ -14,6 +14,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
 import pw.fusionmine.fusionevents.FusionEvents;
 import pw.fusionmine.fusionevents.utils.ColorUtils;
+import pw.fusionmine.fusionevents.utils.HologramUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,21 +27,20 @@ public class CastleManager implements InventoryHolder {
     private final FusionEvents plugin;
     private Location castleLocation;
     private List<Chunk> forceLoadedChunks = new ArrayList<>();
-    private List<ArmorStand> mainHolograms;
+    private String mainHologramName;
     private BukkitTask despawnTask;
     private BukkitTask hologramUpdateTask;
     private long despawnStartTime;
     private boolean isActive;
     private final Map<String, CastleShulker> shulkers;
-    private final Map<String, List<ArmorStand>> shulkerHolograms;
+    private final List<String> shulkerHolograms;
     private final Set<String> processingShulkers = ConcurrentHashMap.newKeySet();
     private int durationSeconds;
 
     public CastleManager(FusionEvents plugin) {
         this.plugin = plugin;
-        this.mainHolograms = new ArrayList<>();
         this.shulkers = new ConcurrentHashMap<>();
-        this.shulkerHolograms = new ConcurrentHashMap<>();
+        this.shulkerHolograms = new ArrayList<>();
         this.isActive = false;
     }
 
@@ -153,46 +153,25 @@ public class CastleManager implements InventoryHolder {
                 ColorUtils.colorize(rName),
                 ColorUtils.colorize("&7Прочность: &c" + shulker.getHitsLeft() + "&7/&c" + max));
 
-        List<ArmorStand> stands = new ArrayList<>();
-        for (int i = 0; i < lines.size(); i++) {
-            Location hLoc = base.clone().add(0, i * 0.35, 0);
-            ArmorStand stand = w.spawn(hLoc, ArmorStand.class);
-            stand.setMarker(true); stand.setGravity(false); stand.setVisible(false);
-            stand.setInvulnerable(true); stand.setBasePlate(false);
-            stand.setCustomNameVisible(true); stand.setCustomName(lines.get(i));
-            stands.add(stand);
-        }
-        shulkerHolograms.put(key, stands);
+        HologramUtils.createHologram(key, base, lines);
+        shulkerHolograms.add(key);
     }
 
     private void updateShulkerHologram(CastleShulker shulker, String key) {
-        List<ArmorStand> stands = shulkerHolograms.get(key);
-        if (stands == null || stands.isEmpty()) return;
         String rName = plugin.getConfigManager().getCastleRaritiesConfig().getString(shulker.getRarity() + ".display-name", "&7???");
         int max = getShulkerMaxHits(shulker.getRarity());
         List<String> newLines = Arrays.asList(
                 ColorUtils.colorize(rName),
                 ColorUtils.colorize("&7Прочность: &c" + shulker.getHitsLeft() + "&7/&c" + max));
-        for (int i = 0; i < stands.size() && i < newLines.size(); i++) {
-            stands.get(i).setCustomName(newLines.get(i));
-        }
+        HologramUtils.updateHologramText(key, newLines);
     }
 
     private void removeShulkerHologram(String key) {
-        List<ArmorStand> stands = shulkerHolograms.remove(key);
-        if (stands != null) {
-            for (ArmorStand stand : stands) {
-                if (stand != null && stand.isValid()) stand.remove();
-            }
-        }
+        HologramUtils.removeHologram(key);
     }
 
     private void removeAllShulkerHolograms() {
-        for (List<ArmorStand> stands : shulkerHolograms.values()) {
-            for (ArmorStand stand : stands) {
-                if (stand != null && stand.isValid()) stand.remove();
-            }
-        }
+        shulkerHolograms.forEach(name -> HologramUtils.removeHologram(name));
         shulkerHolograms.clear();
     }
 
@@ -220,41 +199,31 @@ public class CastleManager implements InventoryHolder {
 
     private void createMainHologram() {
         if (castleLocation == null) return;
-        removeMainHolograms();
         List<String> lines = Arrays.asList(
                 ColorUtils.colorize("&#FF6B6B&l🏰 ЗАМОК "),
                 ColorUtils.colorize("&fЗачистите шалкеры!"),
                 ColorUtils.colorize("&7Время: &#FF6B6B" + durationSeconds + "с")
         );
         Location base = castleLocation.getBlock().getLocation().add(0.5, 12.0, 0.5);
-        for (int i = 0; i < lines.size(); i++) {
-            Location hLoc = base.clone().add(0, - (i * 0.35), 0);
-            ArmorStand stand = castleLocation.getWorld().spawn(hLoc, ArmorStand.class);
-            stand.setMarker(true); stand.setGravity(false); stand.setVisible(false);
-            stand.setInvulnerable(true); stand.setBasePlate(false);
-            stand.setCustomNameVisible(true); stand.setCustomName(lines.get(i));
-            mainHolograms.add(stand);
-        }
+        mainHologramName = HologramUtils.createHologram(base, lines);
     }
 
     private void updateMainHologram() {
-        if (castleLocation == null || mainHolograms.isEmpty()) return;
+        if (castleLocation == null) return;
         String timeLeft = getTimeLeft();
         List<String> lines = Arrays.asList(
                 ColorUtils.colorize("&#FF6B6B&l🏰 ЗАМОК "),
                 ColorUtils.colorize("&fЗачистите шалкеры!"),
                 ColorUtils.colorize("&7Время: &#FF6B6B" + timeLeft)
         );
-        for (int i = 0; i < mainHolograms.size() && i < lines.size(); i++) {
-            mainHolograms.get(i).setCustomName(lines.get(i));
-        }
+        HologramUtils.updateHologramText(mainHologramName, lines);
     }
 
     private void removeMainHolograms() {
-        for (ArmorStand stand : mainHolograms) {
-            if (stand != null && stand.isValid()) stand.remove();
+        if(mainHologramName != null) {
+            HologramUtils.removeHologram(mainHologramName);
+            mainHologramName = null;
         }
-        mainHolograms.clear();
     }
 
     private void startDespawnTask() {
@@ -280,15 +249,8 @@ public class CastleManager implements InventoryHolder {
             public void run() {
                 if (!isActive) { cancel(); return; }
                 updateMainHologram();
-                updateAllShulkerHolograms();
             }
         }.runTaskTimer(plugin, 20L, 20L);
-    }
-
-    private void updateAllShulkerHolograms() {
-        for (Map.Entry<String, CastleShulker> entry : shulkers.entrySet()) {
-            updateShulkerHologram(entry.getValue(), entry.getKey());
-        }
     }
 
     public boolean handleShulkerBreak(Location loc, Player player) {
